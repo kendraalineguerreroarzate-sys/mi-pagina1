@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset ="utp-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    </div>
+    </head>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdnjs.cloundflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <body>
+       <header class="heder">
+        <div class="logo-titulo">
+            <img src="IMAGENES/diseno-logotipo-tienda-instagram_23-2149750743~2.jpg" alt="logo">
+            <h1>HOME SHOP</h1>
+        </div>
+        <div class="menus">
+            <nav class ="navbar">
+                <ul class="menu">
+                    <li class="inicio"><a href="file:///C:/Users/kendr/Videos/Online/formulario.html">Crear seccion</a></li>
+
+                    <li class="car">
+                        <div class="carrito">
+                        <svg id="cari" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                          </svg>
+                          <span id="contador">0</span></div>
+                    </a>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+</div>
+<div class="contenedor">
+
+    </div>
+</div>
+<div class="categorias-elect">
+    <button class="categorias-btn" onclick="filtrar('todos')">TODOS
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/>
+            <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
+            <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/>
+          </svg>
+    </button>
+    <button class="categorias-btn" onclick="filtrar('audio')">AUDIO
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+            <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+          </svg>
+    </button>
+    <button class="categorias-btn" onclick="filtrar('gamer')">ACC GAMER
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+            <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+            <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+          </svg>
+    </button>
+    <button class="categorias-btn" onclick="filtrar('computo')">ACC COMPUTO
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+            <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+          </svg>
+    </button>
+    <button class="categorias-btn" onclick="filtrar('telefonos')">TELEFONIA
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg>
+    </button>
+</div>
+
+        <div class="ofertas-im">
+        <section class="productos-container">
+            <div id="produc">
+            <div class="categorias telefonos">
+            <div class="producto">
+                <img src="IMAGENES/Producto1 telefono.jpeg" alt="funda iphone">
+                <h3>Fundas Para iPhone 13 Pro "Diseño de Pandas" </h3>
+                <div class="satar">
+                <input type="radio" id="star5" name="rating" value="5"/><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4"/><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" checked=""><label for="star3"></label >
+                <input type="radio" id="star2" name="rating" value="2"/><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1"/><label for="star1"></label>
+                </div>
+                <div class="des-ant">$718.00 MXN</div>
+                <span class="oferta">-50%</span>
+                <p class="precio">$359.00 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button  class="btn-agregar"  id="btnagregar" onclick="mostrarMensaje('Fundas Para iPhone 13 Pro - Diseño de Pandas',359.00)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+                
+            </div></div></div>
+                
+            <div class="categorias gamer">
+            <div class="producto">
+                <img src="IMAGENES/51ZUlhG3n-L._AC_SL1000_.jpg" alt="cntrol">
+                <h3>Control Inalámbrico Xbox One - Standard Edition - Negro </h3>
+                <div class="satar">
+                <input type="radio" id="star51" name="rating2" value="5"/><label for="star51"></label>
+                <input type="radio" id="star41" name="rating2" value="4"/><label for="star41"></label>
+                <input type="radio" id="star31" name="rating2" value="3" checked=""><label for="star31"></label >
+                <input type="radio" id="star21" name="rating2" value="2"/><label for="star21"></label>
+                <input type="radio" id="star11" name="rating2" value="1"/><label for="star11"></label>
+                </div>
+                <div class="des-ant">$1,567.00 MXN</div>
+                <span class="oferta">-65%</span>
+                <p class="precio">$548.45 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Control Inalámbrico Xbox One - Standard Edition - Negro',548.45)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>
+                Agregar al carrito</button>
+            </div></div>
+            <div class="categorias audio">
+            <div class="producto">
+                <img src="IMAGENES/au.webp" alt="ai">
+                <h4>Auriculares Inalambricos Bluetooth 6.0 Audifonos Para iPhone iOS y Android 2026</h4>
+                <div class="satar">
+                    <input type="radio" id="star52" name="rating3" value="5"/><label for="star52"></label>
+                    <input type="radio" id="star42" name="rating3" value="4"/><label for="star42"></label>
+                    <input type="radio" id="star32" name="rating3" value="3" checked=""><label for="star32"></label >
+                    <input type="radio" id="star22" name="rating3" value="2"/><label for="star22"></label>
+                    <input type="radio" id="star12" name="rating3" value="1"/><label for="star12"></label>
+                    </div>
+                <div class="des-ant">$2,589.40MXN</div>
+                <span class="oferta">-55%</span>
+                <p class="precio">$1,165.23 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button> </a>
+                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Auriculares Inalambricos Bluetooth 6.0 Audifonos Para iPhone iOS y Android 2026',1165.23)">
+                     <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg> Agregar al carrito</button>
+                <div id="mensaje" class="oculto">¡Se agregó al carrito!</div>
+            </div></div>
+            <div class="categorias computo">
+            <div class="producto">
+                <img src="IMAGENES/Producto1 computo.webp" alt="comp1">
+                <h3>Targeta de Captura usb-C ugreen 1080p 60fps Tipo C</h3>
+                <div class="satar">
+                    <input type="radio" id="star53" name="rating4" value="5"/><label for="star53"></label>
+                    <input type="radio" id="star43" name="rating4" value="4"/><label for="star43"></label>
+                    <input type="radio" id="star33" name="rating4" value="3" checked=""><label for="star33"></label >
+                    <input type="radio" id="star23" name="rating4" value="2"/><label for="star23"></label>
+                    <input type="radio" id="star13" name="rating4" value="1"/><label for="star13"></label>
+                    </div>
+                <div class="des-ant">$1,280.34 MXN</div>
+                <span class="oferta">-75%</span>
+                <p class="precio">$320.08 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar"id="btnagregar" onclick="mostrarMensaje('Targeta de Captura usb-C ugreen 1080p 60fps Tipo C',320.08)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+                <div id="mensaje" class="oculto">¡Se agregó al carrito!</div>
+            </div></div>
+            <div class="categorias computo">
+            <div class="producto">
+                <img src="IMAGENES/Producto2 computo.webp" alt="com2">
+                <h4>Teclado Inálambrico Plegable Bluetooth, Multidispositivo Portatil y Recargable</h4>
+                <div class="satar">
+                    <input type="radio" id="star54" name="rating5" value="5"/><label for="star54"></label>
+                    <input type="radio" id="star44" name="rating5" value="4"/><label for="star44"></label>
+                    <input type="radio" id="star34" name="rating5" value="3" checked=""><label for="star34"></label >
+                    <input type="radio" id="star24" name="rating5" value="2"/><label for="star24"></label>
+                    <input type="radio" id="star14" name="rating5" value="1"/><label for="star14"></label>
+                    </div>
+                <div class="des-ant">$1,600.00 MXN</div>
+                <span class="oferta">-70%</span>
+                <p class="precio">$480.00 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar"id="btnagregar" onclick="mostrarMensaje('Teclado Inálambrico Plegable Bluetooth, Multidispositivo Portatil y Recargable',480.00)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+                <div id="mensaje" class="oculto">¡Se agregó al carrito!</div>
+            </div></div>
+            <div class="categorias computo">
+            <div class="producto">
+                <img src="IMAGENES/ADAP.jpg" alt="AD">
+                <h3>Adaptador usb Bluetooth 5.0 Tp-Link USB</h3>
+                <div class="satar">
+                    <input type="radio" id="star55" name="rating6" value="5"/><label for="star55"></label>
+                    <input type="radio" id="star45" name="rating6" value="4"/><label for="star45"></label>
+                    <input type="radio" id="star35" name="rating6" value="3" checked=""><label for="star35"></label >
+                    <input type="radio" id="star25" name="rating6" value="2"/><label for="star25"></label>
+                    <input type="radio" id="star15" name="rating6" value="1"/><label for="star15"></label>
+                    </div>
+                <div class="des-ant">$179.00 MXN</div>
+                <span class="oferta">-50%</span>
+                <p class="precio">$89.50 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Adaptador usb Bluetooth 5.0 Tp-Link USB',89.50)">
+                     <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg> Agregar al carrito</button>
+            </div></div>
+            <div class="categorias telefonos">
+            <div class="producto">
+                <div class="imagen">
+                <img  src="IMAGENES/azul.jpg" alt="azul" id="imagen-actual"></div>
+                <span id="flecha" class="flecha">&#10095;</span>
+                <h3>Funda Para Poco X5 Pro 5g/Redmi Note 12 Pro 5g animado azul y rosa</h3>
+                <div class="satar">
+                    <input type="radio" id="star56" name="rating7" value="5"/><label for="star56"></label>
+                    <input type="radio" id="star46" name="rating7" value="4"/><label for="star46"></label>
+                    <input type="radio" id="star36" name="rating7" value="3" checked=""><label for="star36"></label >
+                    <input type="radio" id="star26" name="rating7" value="2"/><label for="star26"></label>
+                    <input type="radio" id="star16" name="rating7" value="1"/><label for="star16"></label>
+                    </div>
+                <div class="des-ant">$448.94 MXN</div>
+                <span class="oferta">-50%</span>
+                <p class="precio">$224.47 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar"id="btnagregar" onclick="mostrarMensaje('Funda Para Poco X5 Pro 5g/Redmi Note 12 Pro 5g animado azul y rosa',224.47)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+            </div></div>
+            <div class="categorias gamer">
+            <div class="producto">
+                <img src="IMAGENES/Nintendo-Switch.webp" alt="Ns">
+                <h3>Nintendo Consola Switch 1 1 "Neon Blue / Neon Red"</h3>
+                <div class="satar">
+                    <input type="radio" id="star57" name="rating8" value="5"/><label for="star57"></label>
+                    <input type="radio" id="star47" name="rating8" value="4"/><label for="star47"></label>
+                    <input type="radio" id="star37" name="rating8" value="3" checked=""><label for="star37"></label >
+                    <input type="radio" id="star27" name="rating8" value="2"/><label for="star27"></label>
+                    <input type="radio" id="star17" name="rating8" value="1"/><label for="star17"></label>
+                    </div>
+                <div class="des-ant">$4,398.00 MXN</div>
+                <span class="oferta">-50%</span>
+                <p class="precio">$2,199.00 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar"id="btnagregar" onclick="mostrarMensaje('Nintendo Consola Switch 1 1 - Neon Blue / Neon Red',2199.00)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+            </div></div>
+            <div class="categorias gamer">
+            <div class="producto">
+                <img src="IMAGENES/gamer.jpg" alt="Ag">
+                <h5>Audifonos Gamer con Microfono para PS4 Xbox One PC, Diadema Alámbrico para Juegos con Canselación de Ruidos</h5>
+                <div class="satar">
+                    <input type="radio" id="star58" name="rating9" value="5"/><label for="star58"></label>
+                    <input type="radio" id="star48" name="rating9" value="4"/><label for="star48"></label>
+                    <input type="radio" id="star38" name="rating9" value="3" checked=""><label for="star38"></label >
+                    <input type="radio" id="star28" name="rating9" value="2"/><label for="star28"></label>
+                    <input type="radio" id="star18" name="rating9" value="1"/><label for="star18"></label>
+                    </div>
+                <div class="des-ant">$1,542.83 MXN</div>
+                <span class="oferta">-65%</span>
+                <p class="precio">$539.99MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Audifonos Gamer con Microfono para PS4 Xbox One PC, Diadema Alámbrico para Juegos con Canselación de Ruidos',539.99)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+            </div></div>
+            <div class="categorias computo">
+            <div class="producto">
+                <img src="IMAGENES/mau rosa.jpg" alt="Mr">
+                <h3>Mause Inalambrico, Mause Bluetooth/Wireless2 4GHz/Recargable</h3>
+                <div class="satar">
+                    <input type="radio" id="star59" name="rating10" value="5"/><label for="star59"></label>
+                    <input type="radio" id="star49" name="rating10" value="4"/><label for="star49"></label>
+                    <input type="radio" id="star39" name="rating10" value="3" checked=""><label for="star39"></label >
+                    <input type="radio" id="star29" name="rating10" value="2"/><label for="star29"></label>
+                    <input type="radio" id="star19" name="rating10" value="1"/><label for="star19"></label>
+                    </div>
+                <div class="des-ant">$175.00 MXN</div>
+                <span class="oferta">-78%</span>
+                <p class="precio">$38.50 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Mause Inalambrico, Mause Bluetooth/Wireless2 4GHz/Recargable',38.50)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+            </div></div>
+            <div class="categorias telefonos">
+            <div class="producto">
+                <img src="IMAGENES/hello.jpeg" alt="Hi">
+                <h3>Funda Animada de Hello Kitty para iPhone 13</h3>
+                <div class="satar">
+                    <input type="radio" id="star510" name="rating11" value="5"/><label for="star510"></label>
+                    <input type="radio" id="star410" name="rating11" value="4"/><label for="star410"></label>
+                    <input type="radio" id="star310" name="rating11" value="3" checked=""><label for="star310"></label >
+                    <input type="radio" id="star210" name="rating11" value="2"/><label for="star210"></label>
+                    <input type="radio" id="star110" name="rating11" value="1"/><label for="star110"></label>
+                    </div>
+                <div class="des-ant">$250.76 MXN</div>
+                <span class="oferta">-50%</span>
+                <p class="precio">$125.38 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Funda Animada de Hello Kitty para iPhone 13',125.38)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+            </div></div>
+            <div class="categorias telefonos">
+            <div class="producto">
+                <img src="IMAGENES/honor.webp" alt="Hr">
+                <h3>Funda Resistente para Honor X8 - Con Anillo Integrado</h3>
+                <div class="satar">
+                    <input type="radio" id="star511" name="rating12" value="5"/><label for="star511"></label>
+                    <input type="radio" id="star411" name="rating12" value="4"/><label for="star411"></label>
+                    <input type="radio" id="star311" name="rating12" value="3" checked=""><label for="star311"></label >
+                    <input type="radio" id="star211" name="rating12" value="2"/><label for="star211"></label>
+                    <input type="radio" id="star111" name="rating12" value="1"/><label for="star111"></label>
+                    </div>
+                <div class="des-ant">$555.56 MXN</div>
+                <span class="oferta">-55%</span>
+                <p class="precio">$250.00 MXN</p>
+                <a href="pago.html">
+                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg></button></a>
+                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Funda Resistente para Honor X8 - Con Anillo Integrado',250.00)">
+                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg> Agregar al carrito</button>
+            </div></div>
+            <div class="categorias audio">
+                <div class="producto">
+                    <img src="IMAGENES/bocina.jpg" alt="Hr">
+                    <h5 style="text-align: justify;">Creative Labs GigaWorks T40 Series II - Bocinas (Mesa/estante, PC, Integrado, Alámbrico, RCA / 3.5mm, 50 - 20000 Hz)</h5>
+                    <div class="satar">
+                        <input type="radio" id="star512" name="rating13" value="5"/><label for="star512"></label>
+                        <input type="radio" id="star412" name="rating13" value="4"/><label for="star412"></label>
+                        <input type="radio" id="star312" name="rating13" value="3" checked=""><label for="star312"></label >
+                        <input type="radio" id="star212" name="rating13" value="2"/><label for="star212"></label>
+                        <input type="radio" id="star112" name="rating13" value="1"/><label for="star112"></label>
+                        </div>
+                    <div class="des-ant">$4,094.72 MXN</div>
+                    <span class="oferta">-43%</span>
+                    <p class="precio">$2,339.99 MXN</p>
+                    <a href="pago.html">
+                    <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg></button></a>
+                    <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Creative Labs GigaWorks T40 Series II - Bocinas (Mesa/estante, PC, Integrado, Alámbrico, RCA / 3.5mm, 50 - 20000 Hz)',2339.99)">
+                        <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg> Agregar al carrito</button>
+                </div></div>
+                <div class="categorias gamer">
+                    <div class="producto">
+                        <img src="IMAGENES/pcgamer.jpg" alt="Hr">
+                        <h5 style="text-align: justify;">Lucky Owl PC Gamer Escritorio Procesador RYZEN 7 5700G /RAM32gb/SSD 1TB M.2/T.Madre A520M/F.Poder 600w</h5>
+                        <div class="satar">
+                            <input type="radio" id="star513" name="rating14" value="5"/><label for="star513"></label>
+                            <input type="radio" id="star413" name="rating14" value="4"/><label for="star413"></label>
+                            <input type="radio" id="star313" name="rating14" value="3" checked=""><label for="star313"></label >
+                            <input type="radio" id="star213" name="rating14" value="2"/><label for="star213"></label>
+                            <input type="radio" id="star113" name="rating14" value="1"/><label for="star113"></label>
+                            </div>
+                        <div class="des-ant">$20,595.52 MXN</div>
+                        <span class="oferta">-33%</span>
+                        <p class="precio">$13,799.00 MXN</p>
+                        <a href="pago.html">
+                        <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                          </svg></button></a>
+                        <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Lucky Owl PC Gamer Escritorio Procesador RYZEN 7 5700G /RAM32gb/SSD 1TB M.2/T.Madre A520M/F.Poder 600w.',13799.00)">
+                            <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg> Agregar al carrito</button>
+                    </div></div>
+                    <div class="categorias telefonos">
+                        <div class="producto">
+                            <img src="IMAGENES/samsu.jpg" alt="Hr">
+                            <h5 style="text-align: justify;">Teléfono Celular Samsung Galaxy Z Fold7, Smartphone AI de 512 GB, Android Desbloqueado, edición de Fotos AI, visualización Grande</h5>
+                            <div class="satar">
+                                <input type="radio" id="star514" name="rating15" value="5"/><label for="star514"></label>
+                                <input type="radio" id="star414" name="rating15" value="4"/><label for="star414"></label>
+                                <input type="radio" id="star314" name="rating15" value="3" checked=""><label for="star314"></label >
+                                <input type="radio" id="star214" name="rating15" value="2"/><label for="star214"></label>
+                                <input type="radio" id="star114" name="rating15" value="1"/><label for="star114"></label>
+                                </div>
+                            <div class="des-ant">$48,888.51 MXN</div>
+                            <span class="oferta">-10%</span>
+                            <p class="precio">$43,999.66 MXN</p>
+                            <a href="pago.html">
+                            <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                              </svg></button></a>
+                            <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Teléfono Celular Samsung Galaxy Z Fold7, Smartphone AI de 512 GB, Android Desbloqueado, edición de Fotos AI, visualización Grande',43999.66)">
+                                <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                  </svg> Agregar al carrito</button>
+                        </div></div>
+                        <div class="categorias audio">
+                            <div class="producto">
+                                <img src="IMAGENES/appol.jpg" alt="Hr">
+                                <h5 style="text-align: justify;">Audífonos inalámbricos AirPods MAX de Apple,Cancelación Activa de Ruido,Carga USB-C,audífonos Bluetooth para el iPhone - Azul </h5>
+                                <div class="satar">
+                                    <input type="radio" id="star515" name="rating16" value="5"/><label for="star515"></label>
+                                    <input type="radio" id="star415" name="rating16" value="4"/><label for="star415"></label>
+                                    <input type="radio" id="star315" name="rating16" value="3" checked=""><label for="star315"></label >
+                                    <input type="radio" id="star215" name="rating16" value="2"/><label for="star215"></label>
+                                    <input type="radio" id="star115" name="rating16" value="1"/><label for="star115"></label>
+                                    </div>
+                                <div class="des-ant">$14,189.29 MXN</div>
+                                <span class="oferta">-16%</span>
+                                <p class="precio">$12,599.00 MXN</p>
+                                <a href="pago.html">
+                                <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                  </svg></button></a>
+                                <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Audífonos inalámbricos AirPods MAX de Apple,Cancelación Activa de Ruido,Carga USB-C,audífonos Bluetooth para el iPhone - Azul ',12599.00)">
+                                    <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                      </svg> Agregar al carrito</button>
+                            </div></div>
+                            <div class="categorias telefonos">
+                                <div class="producto">
+                                    <img src="IMAGENES/onnor.jpg" alt="Hr">
+                                    <h3 style="text-align: justify;">Smartphone Honor Magic 8 Lite 8/512GB Rojo</h3>
+                                    <div class="satar">
+                                        <input type="radio" id="star517" name="rating18" value="5"/><label for="star517"></label>
+                                        <input type="radio" id="star417" name="rating18" value="4"/><label for="star417"></label>
+                                        <input type="radio" id="star317" name="rating18" value="3" checked=""><label for="star317"></label >
+                                        <input type="radio" id="star217" name="rating18" value="2"/><label for="star217"></label>
+                                        <input type="radio" id="star117" name="rating18" value="1"/><label for="star117"></label>
+                                        </div>
+                                    <div class="des-ant">$9,999.00 MXN</div>
+                                    <span class="oferta">-30%</span>
+                                    <p class="precio">$6,099.39 MXN</p>
+                                    <a href="pago.html">
+                                    <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                      </svg></button></a>
+                                    <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Smartphone Honor Magic 8 Lite 8/512GB Rojo',6099.39)">
+                                        <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                          </svg> Agregar al carrito</button>
+                                </div></div>
+                            <div class="categorias audio">
+                                <div class="producto">
+                                    <img src="IMAGENES/appe.jpg" alt="Hr">
+                                    <h5 style="text-align: justify;">Audífonos inalámbricos AirPods 4 de Apple,audífonos Bluetooth,Resistentes al Polvo,al Agua y al Sudor,Chip H2,30 Horas de batería </h5>
+                                    <div class="satar">
+                                        <input type="radio" id="star516" name="rating17" value="5"/><label for="star516"></label>
+                                        <input type="radio" id="star416" name="rating17" value="4"/><label for="star416"></label>
+                                        <input type="radio" id="star316" name="rating17" value="3" checked=""><label for="star316"></label >
+                                        <input type="radio" id="star216" name="rating17" value="2"/><label for="star216"></label>
+                                        <input type="radio" id="star116" name="rating17" value="1"/><label for="star116"></label>
+                                        </div>
+                                    <div class="des-ant">$2,999.00 MXN</div>
+                                    <span class="oferta">-25%</span>
+                                    <p class="precio">$2,249.25 MXN</p>
+                                    <a href="pago.html">
+                                    <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                      </svg></button></a>
+                                    <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Audífonos inalámbricos AirPods 4 de Apple,audífonos Bluetooth,Audio Espacial Personalizado,Resistentes al Polvo,al Agua y al Sudor,Chip H2,hasta 30 Horas de batería ',2249.25)">
+                                        <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                          </svg> Agregar al carrito</button>
+                                </div></div>
+                                <div class="categorias computo">
+                                    <div class="producto">
+                                        <img src="IMAGENES/impre.jpg" alt="Hr">
+                                        <h5 style="text-align: justify;">Brother Impresora Multifuncional 3 en 1 de Inyección de Tinta a Color DCPT430W |Impresión Wi-Fi 5GHz,Tinta Recargable </h5>
+                                        <div class="satar">
+                                            <input type="radio" id="star518" name="rating19" value="5"/><label for="star518"></label>
+                                            <input type="radio" id="star418" name="rating19" value="4"/><label for="star418"></label>
+                                            <input type="radio" id="star318" name="rating19" value="3" checked=""><label for="star318"></label >
+                                            <input type="radio" id="star218" name="rating19" value="2"/><label for="star218"></label>
+                                            <input type="radio" id="star118" name="rating19" value="1"/><label for="star118"></label>
+                                            </div>
+                                        <div class="des-ant">$3,999.00 MXN</div>
+                                        <span class="oferta">-19%</span>
+                                        <p class="precio">$3,229.00 MXN</p>
+                                        <a href="pago.html">
+                                        <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                          </svg></button></a>
+                                        <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Brother Impresora Multifuncional 3 en 1 de Inyección de Tinta a Color DCPT430W |Impresión Wi-Fi 5GHz,Tinta Recargable',3229.00)">
+                                            <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                              </svg> Agregar al carrito</button>
+                                    </div></div>
+                                    <div class="categorias gamer">
+                                        <div class="producto">
+                                            <img src="IMAGENES/play.jpg" alt="Hr">
+                                            <h5 style="text-align: justify;">Consola PlayStation 5 Edición Digital de 825 GB: ASTRO BOT y Gran Turismo 7 Modelo PS5DIG-ASTRO - Digital Edition</h5>
+                                            <div class="satar">
+                                                <input type="radio" id="star519" name="rating20" value="5"/><label for="star519"></label>
+                                                <input type="radio" id="star419" name="rating20" value="4"/><label for="star419"></label>
+                                                <input type="radio" id="star319" name="rating20" value="3" checked=""><label for="star319"></label >
+                                                <input type="radio" id="star219" name="rating20" value="2"/><label for="star219"></label>
+                                                <input type="radio" id="star119" name="rating20" value="1"/><label for="star119"></label>
+                                                </div>
+                                            <div class="des-ant">$11,599.00 MXN</div>
+                                            <span class="oferta">-23%</span>
+                                            <p class="precio">$8,959.00 MXN</p>
+                                            <a href="pago.html">
+                                            <button class="btn-comprar">Comprar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                              </svg></button></a>
+                                            <button class="btn-agregar" id="btnagregar" onclick="mostrarMensaje('Consola PlayStation 5 Edición Digital de 825 GB: ASTRO BOT y Gran Turismo 7 Modelo PS5DIG-ASTRO - Digital Edition',8959.00)">
+                                                <svg class="icono-car" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                                  </svg> Agregar al carrito</button>
+                                        </div></div>
+        </section>
+        <footer>
+            <div class="contenido-fon">
+                <h3>Contacto</h3>
+                <address>
+                    <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885-511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                      </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                      </svg> Telefono: +52 56 5631 3022</p>
+                    <p>Síguenos en todas nustras redes sociales</p>
+                   <p>@home_shop</p>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>     
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+                </address>
+            </div>
+        </footer>
+        <div id="menu2" class="oculto">
+            <div class="menu-carrito">
+                <h2>Shopping Cart</h2>
+                <ul id="lista-carrito">
+    
+                </ul>
+                <div class="precio2">
+                    <p>Total:$</p>
+                    <p id="totall">0</p>
+                </div>
+                <div class="btn">
+                    <a href="pago.html">
+                    <button>PAGO <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg></button></a>
+                    <button id="cerrar" class="cerrar">CLOSE <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                      </svg></button>
+    
+    
+                </div></div>
+            </div>
+        <script src="script.js"></script>
+        <script src="carrito.js"></script>
+        <script src="categorias.js"></script>
+        <script src="comprar.js"></script>
+    </body>
+
+</html>
