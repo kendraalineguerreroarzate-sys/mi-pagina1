@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método de Pago</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <div class="payment-container">
+
+        <div class="credit-card bbva" id="card">
+          <div class="front">
+            <div class="bbva-logo">BBVA</div>
+            <div class="chip"></div>
+            <div class="card-number" id="card-number">#### #### #### ####</div>
+            <div class="card-name-label">Nombre</div>
+            <div class="card-name" id="card-name">Ingresar Nombre</div>
+            <div class="card-expiry-label">Expira</div>
+            <div class="card-expiry" id="card-expiry">MM/AA</div>
+          </div>
+          <div class="back">
+            <div class="magnetic-strip"></div>
+            <div class="cvv-label">CVV</div>
+            <div class="card-cvv" id="card-cvv">###</div>
+          </div>
+        </div>
+      
+
+        <form onsubmit="procesarPago(event)">
+          <label>Número de tarjeta</label>
+          <input type="text" id="number" placeholder="0000 0000 0000 0000">
+      
+          <label>Nombre en la tarjeta</label>
+          <input type="text" id="name" placeholder="Nombre de la targeta">
+      
+          <div class="row">
+            <div>
+              <label>Fecha de expiración</label>
+              <input type="text" id="expiry" placeholder="MM/AA">
+            </div>
+      
+            <div>
+              <label>CVV</label>
+              <input type="text" id="cvv" placeholder="###">
+            </div>
+          </div>
+      
+          <button type="submit" id="pay-btn">Pagar</button>
+        </form>
+        <p id="mensaje"></p>
+
+<script src="comprar.js"></script>
+</body>
